@@ -8,10 +8,13 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.vitorhr.locator.R
 import com.vitorhr.locator.databinding.FragmentLoginBinding
+import org.koin.android.ext.android.inject
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginFragment : Fragment() {
 
     lateinit var binding: FragmentLoginBinding
+    private val loginViewModel: LoginViewModel by viewModel<LoginViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,7 +26,7 @@ class LoginFragment : Fragment() {
             container,
             false
         ).apply {
-            viewModel = LoginViewModel()
+            viewModel = loginViewModel
         }
         return binding.root
     }
