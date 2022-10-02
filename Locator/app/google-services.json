@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "925494301711",
+    "project_id": "geral-5984d",
+    "storage_bucket": "geral-5984d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925494301711:android:ea57f036864edd18dbff7a",
+        "android_client_info": {
+          "package_name": "com.vitorhr.Locator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925494301711-5a9rllvht1ktqbqimqsdka9bklvldbg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmaRudEQ9VLwwWZKo5eDAK-FDWyA61xcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925494301711-5a9rllvht1ktqbqimqsdka9bklvldbg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925494301711:android:666f68e56c8f39a9dbff7a",
+        "android_client_info": {
+          "package_name": "com.vitorhr.locator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925494301711-5a9rllvht1ktqbqimqsdka9bklvldbg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmaRudEQ9VLwwWZKo5eDAK-FDWyA61xcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925494301711-5a9rllvht1ktqbqimqsdka9bklvldbg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

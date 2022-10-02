@@ -1,14 +1,16 @@
 package com.vitorhr.locator.ui.login
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.vitorhr.locator.model.LoginUser
 
 class LoginViewModel : ViewModel() {
     var pwd = MutableLiveData("")
     var email = MutableLiveData("")
 
+    var didLoginButtonClick = MutableLiveData<LoginUser>()
+
     fun loginButtonClick() {
-        Log.d("VITOR", "CLICK")
+        didLoginButtonClick.value = LoginUser(email.value!!, pwd.value!!)
     }
 }
