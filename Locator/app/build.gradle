@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 android {
@@ -36,6 +37,12 @@ android {
         viewBinding true
         dataBinding true
     }
+
+    testOptions {
+        unitTests {
+            unitTests.returnDefaultValues = true
+        }
+    }
 }
 
 dependencies {
@@ -44,9 +51,12 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    testImplementation "io.mockk:mockk:1.13.2"
+    androidTestImplementation "io.mockk:mockk-android:1.13.2"
 
     // Navigation dependencies
     def nav_version = "2.5.2"
@@ -78,8 +88,14 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:30.4.1')
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.8'
 
+    // Analytics
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+
+    implementation "com.google.android.gms:play-services-location:17.0.0"
+
 }
 
 apply plugin: 'com.google.gms.google-services'
